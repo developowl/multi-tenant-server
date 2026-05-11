@@ -1,0 +1,14 @@
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+# 현재 사용하지 않는 정의 파일입니다.
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: storage-quota
+  namespace: tenant-alpha # 테넌트 알파 공간에 적용
+spec:
+  hard:
+    requests.storage: "5Gi"    # 모든 PVC 용량의 합계를 5Gi로 제한
+    persistentvolumeclaims: "3" # 생성 가능한 PVC 개수를 3개로 제한
+

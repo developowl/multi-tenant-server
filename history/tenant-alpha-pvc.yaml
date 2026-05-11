@@ -1,0 +1,17 @@
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+# 현재 사용하지 않는 정의 파일입니다.
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: tenant-alpha-home
+  namespace: tenant-alpha
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: local-path
+

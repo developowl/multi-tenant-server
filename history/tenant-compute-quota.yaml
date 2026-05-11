@@ -1,0 +1,16 @@
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+# 현재 사용하지 않는 정의 파일입니다.
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-quota
+  namespace: tenant-alpha
+spec:
+  hard:
+    requests.cpu: "500m"      # 0.5 코어 보장
+    requests.memory: "512Mi"  # 512MiB 보장
+    limits.cpu: "1000m"       # 최대 1 코어 (1000m = 1 vCPU)
+    limits.memory: "1Gi"      # 최대 1GiB (t2.micro 급)
+

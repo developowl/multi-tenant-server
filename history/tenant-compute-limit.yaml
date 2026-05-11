@@ -1,0 +1,22 @@
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+# 현재 사용하지 않는 정의 파일입니다.
+# %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: compute-limit-range
+  namespace: tenant-alpha
+spec:
+  limits:
+  - type: Container
+    default:                 # Limit 미설정 시 자동 부여
+      cpu: "500m"
+      memory: "512Mi"
+    defaultRequest:          # Request 미설정 시 자동 부여
+      cpu: "200m"
+      memory: "256Mi"
+    max:                     # 개별 컨테이너가 가질 수 있는 최대치
+      cpu: "800m"
+      memory: "800Mi"
+

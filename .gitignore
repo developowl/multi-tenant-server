@@ -1,0 +1,5 @@
+.vscode/sftp.json
+
+.vscode/*.json
+!.vscode/settings.json
+!.vscode/extensions.json

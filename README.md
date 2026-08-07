@@ -5,7 +5,9 @@ Coming soon
 A Kubernetes-based multi-tenant server hosting project running on a Raspberry Pi Homelab cluster.
 
 ## 📝 구축 과정기 (블로그 작성)
-[velog - 프로젝트 구축 과정기](https://velog.io/@pizza_loves_me/series/Homelab)
+[velog - 홈랩 클러스터 구축 과정기](https://velog.io/@pizza_loves_me/series/Project-Build-Kubernetes-Cluster-Homelab-on-Bare-metal-Raspberry-Pi-3)
+[velog - Multi-Tenant 설계 과정기](https://velog.io/@pizza_loves_me/series/Homelab)
+[velog - 갈아엎기,,Coming soon](https://github.com/Phantom-s-Lab/Phantom-cloud)
 
 <img src="./assets/homelab-photo-v2.jpeg" width="300" /> (반려 서버입니다.)
 
